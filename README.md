@@ -1,1 +1,1 @@
-# scala-journy
+# scala-journey
