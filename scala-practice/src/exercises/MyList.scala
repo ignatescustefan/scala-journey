@@ -190,4 +190,10 @@ object ListTest extends App {
   println(listOfInt.sort((x, y) => y - x))
   println(cloneList.zipWith[String, String](listOfString, _ + "-" + _))
   println(listOfInt.fold(0)(_ + _))
+
+  val combinations = for {
+    n <- listOfInt
+    string <- listOfString
+  } yield n + "-" + string
+  println(combinations)
 }
